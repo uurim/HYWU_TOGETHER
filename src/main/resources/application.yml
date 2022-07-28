@@ -1,6 +1,14 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://database-hywu-together.cjyysgfie2sl.ap-northeast-2.rds.amazonaws.com:3306/HYWU_TOGETHER?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    username: admin
-    password: hywu2022
+      jdbc-url: jdbc:mysql://hywu-together.cjyysgfie2sl.ap-northeast-2.rds.amazonaws.com:3306/hywu_together?useUnicode=yes&characterEncoding=UTF-8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: admin
+      password: hywu2022
+  jpa:
+    properties:
+      hibernate:
+        #show_sql: true
+        format_sql: true
+        temp:
+          use_jdbc_metadata_defaults: false
+    generate-ddl: true
