@@ -1,7 +1,7 @@
-package com.jobcho.HYWU_TOGETHER.service;
+package com.jobcho.hywuto.service;
 
-import com.jobcho.HYWU_TOGETHER.model.User;
-import com.jobcho.HYWU_TOGETHER.repository.UserRepository;
+import com.jobcho.hywuto.model.User;
+import com.jobcho.hywuto.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,6 @@
-package com.jobcho.HYWU_TOGETHER.repository;
+package com.jobcho.hywuto.repository;
 
-import com.jobcho.HYWU_TOGETHER.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.jobcho.hywuto.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

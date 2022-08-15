@@ -1,13 +1,9 @@
-package com.jobcho.HYWU_TOGETHER.controller;
-import com.jobcho.HYWU_TOGETHER.model.User;
-import com.jobcho.HYWU_TOGETHER.repository.UserRepository;
-import com.jobcho.HYWU_TOGETHER.service.UserService;
-import lombok.RequiredArgsConstructor;
+package com.jobcho.hywuto.controller;
+import com.jobcho.hywuto.model.User;
+import com.jobcho.hywuto.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @RestController

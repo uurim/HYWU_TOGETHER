@@ -1,4 +1,4 @@
-package com.jobcho.HYWU_TOGETHER.controller;
+package com.jobcho.hywuto.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;

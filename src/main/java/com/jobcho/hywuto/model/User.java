@@ -1,4 +1,4 @@
-package com.jobcho.HYWU_TOGETHER.model;
+package com.jobcho.hywuto.model;
 
 import lombok.*;
 

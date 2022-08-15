@@ -1,8 +1,8 @@
-package com.jobcho.HYWU_TOGETHER.user;
+package com.jobcho.hywuto.user;
 
-import com.jobcho.HYWU_TOGETHER.HywuTogetherApplication;
-import com.jobcho.HYWU_TOGETHER.model.User;
-import com.jobcho.HYWU_TOGETHER.repository.UserRepository;
+import com.jobcho.hywuto.HywuTogetherApplication;
+import com.jobcho.hywuto.model.User;
+import com.jobcho.hywuto.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

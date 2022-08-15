@@ -1,4 +1,4 @@
-package com.jobcho.HYWU_TOGETHER;
+package com.jobcho.hywuto;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
