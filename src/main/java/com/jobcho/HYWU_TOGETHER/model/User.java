@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 //Entity : 테이블 정보 설정
 @Builder
-@ToString
+//@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -18,7 +18,6 @@ import javax.persistence.Table;
 public class User {
 
     @Id
-    @Column(nullable = false, unique = true)
     private String name;
 
     @Column(nullable = false)
