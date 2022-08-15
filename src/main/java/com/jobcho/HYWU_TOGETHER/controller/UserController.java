@@ -11,17 +11,13 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @RestController
-@RequiredArgsConstructor
 @RequestMapping("/test")
 public class UserController {
 
-    private final UserRepository userRepository;
 
     @Autowired
     private UserService userService;
 
-    @PersistenceContext
-    private EntityManager entityManager;
 
     // 전체 조회
     @GetMapping("searchAll")

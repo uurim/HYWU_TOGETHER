@@ -18,9 +18,8 @@ public class UserService {
     @PersistenceContext
     private EntityManager entityManager;
 
-    private User user;
-
     public List<User> searchAll() {
+
         return userRepository.findAll();
     }
 

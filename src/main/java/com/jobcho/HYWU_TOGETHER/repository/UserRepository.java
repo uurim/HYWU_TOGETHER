@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 //Repository : 쿼리 정보 설정
-@Repository
+@Repository //
 public interface UserRepository extends JpaRepository<User, String>{
     @Query(value = "select name, age from sample_member where name = :name", nativeQuery=true)
     List<User> searchParamRepo(@Param("name") String name);
