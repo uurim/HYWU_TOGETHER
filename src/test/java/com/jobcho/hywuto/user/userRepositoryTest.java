@@ -1,7 +1,7 @@
 package com.jobcho.hywuto.user;
 
 import com.jobcho.hywuto.HywuTogetherApplication;
-import com.jobcho.hywuto.model.User;
+import com.jobcho.hywuto.model.UsrInf;
 import com.jobcho.hywuto.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -21,10 +21,10 @@ public class userRepositoryTest {
 
     @Test
     public void create(){
-        User user = new User();
+        UsrInf user = new UsrInf();
         user.setName("잔디");
         user.setAge(23);
-        User newUser = userRepository.save(user);
+        UsrInf newUser = userRepository.save(user);
         System.out.println(newUser);
     }
 }
