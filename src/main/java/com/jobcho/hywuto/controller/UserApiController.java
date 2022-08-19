@@ -15,7 +15,7 @@ public class UserApiController {
 
     private final UserService userService;
 
-    @PostMapping("/auth/joinProc")
+    @PostMapping("/joinProc")
     public ResponseDto<Integer> save(@RequestBody UsrInf user) {
         System.out.println("UserApiController : save 호출됨");
         // 실제 DB에 Insert

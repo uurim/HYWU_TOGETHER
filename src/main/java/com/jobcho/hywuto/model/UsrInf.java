@@ -2,9 +2,11 @@ package com.jobcho.hywuto.model;
 
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 //Entity : 테이블 정보 설정
 @Builder
@@ -19,24 +21,27 @@ public class UsrInf {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment
     private int usrSq;
 
-//    @Column(nullable = false, length = 1)
-//    private int usrTp;
+    @Column(name="usr_tp")
+    private int usrTp;
 
-    @Column(nullable = false, unique = true)
+    @Column(name="usr_seq_no")
     private int usrSeqNo;
 
-    @Column(nullable = false, length = 30, unique = true)
+    @Column(name="usr_nm")
     private String usrNm;
 
-    @Column(nullable = false, length = 30, unique = true)
+    @Column(name="usr_id")
     private String usrId;
 
-    @Column(nullable = false, length = 60, unique = true)
+    @Column(name="usr_mail")
     private String usrMail;
 
     @CreationTimestamp // 시간 자동 입력
-    private Timestamp usrReqDt;
+    @Column(name="usr_reg_dt")
+    private LocalDateTime usrRegDt = LocalDateTime.now();
 
-    private Timestamp usrModDt;
+    @UpdateTimestamp
+    @Column(name="usr_mod_dt")
+    private LocalDateTime usrModDt;
 
 }

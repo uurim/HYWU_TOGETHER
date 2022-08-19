@@ -12,6 +12,8 @@ let index = {
         alert('user의 save함수 호출됨');
         let data = {
             usrNm: $("#usrNm").val(),
+            usrTp: $("#usrTp").val(),
+            usrId: $("#usrId").val(),
             usrSeqNo: $("#usrSeqNo").val(),
             usrMail: $("#usrMail").val()
         };

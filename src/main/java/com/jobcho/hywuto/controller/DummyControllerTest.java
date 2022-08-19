@@ -14,9 +14,6 @@ public class DummyControllerTest {
 
     @PostMapping("/test")
     public String join(UsrInf user) {
-        System.out.println("username : " + user.getUsrNm());
-        System.out.println("seq number : " + user.getUsrSeqNo());
-        System.out.println("email : " + user.getUsrMail());
 
         userRepository.save(user);
         return "회원가입이 완료되었습니다.";

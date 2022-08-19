@@ -8,7 +8,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
-public class UserService {
+public class
+UserService {
 
     private final UserRepository userRepository;
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 
 <head>
 
@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>SB Admin 2 - Register</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
     <!-- Custom fonts for this template-->
     <link href="bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"/>
@@ -38,8 +39,16 @@
                             </div>
                             <form class="user">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="usrName"
+                                    <input type="text" class="form-control form-control-user" id="usrNm"
                                         placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="usrTp"
+                                           placeholder="type 1=student">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="usrId"
+                                           placeholder="id">
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="usrMail"
@@ -47,19 +56,19 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user"
-                                        id="usrSeqNo" placeholder="학번/사번">
+                                        id="usrSeqNo" placeholder="학번">
                                 </div>
-                                <button type="submit" id="btn-save" class="btn btn-primary btn-user btn-block">
-                                    Register Account
-                                </button>
-                                <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i> Register with Google
-                                </a>
-                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                </a>
                             </form>
+                            <button id="btn-save" class="btn btn-primary btn-user btn-block">
+                                Register Account
+                            </button>
+                            <hr>
+                            <a href="index.html" class="btn btn-google btn-user btn-block">
+                                <i class="fab fa-google fa-fw"></i> Register with Google
+                            </a>
+                            <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                            </a>
                             <hr>
                             <div class="text-center">
                                 <a class="small" href="forgot-password.html">Forgot Password?</a>
@@ -74,6 +83,7 @@
         </div>
 
     </div>
+    <script type="text/javascript" th:src="@{bootstrap/js/user.js}"></script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="bootstrap/vendor/jquery/jquery.min.js"></script>
