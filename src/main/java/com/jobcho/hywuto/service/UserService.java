@@ -1,6 +1,6 @@
 package com.jobcho.hywuto.service;
 
-import com.jobcho.hywuto.model.UsrInf;
+import com.jobcho.hywuto.model.User;
 import com.jobcho.hywuto.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,7 @@ UserService {
     private final UserRepository userRepository;
 
     @Transactional
-    public int register(UsrInf user) {
+    public int register(User user) {
         try {
             userRepository.save(user);
             return 1;

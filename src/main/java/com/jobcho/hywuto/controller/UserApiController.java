@@ -1,7 +1,7 @@
 package com.jobcho.hywuto.controller;
 
 import com.jobcho.hywuto.dto.ResponseDto;
-import com.jobcho.hywuto.model.UsrInf;
+import com.jobcho.hywuto.model.User;
 import com.jobcho.hywuto.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -16,7 +16,7 @@ public class UserApiController {
     private final UserService userService;
 
     @PostMapping("/joinProc")
-    public ResponseDto<Integer> save(@RequestBody UsrInf user) {
+    public ResponseDto<Integer> save(@RequestBody User user) {
         System.out.println("UserApiController : save 호출됨");
         // 실제 DB에 Insert
         int result = userService.register(user);
