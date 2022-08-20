@@ -5,7 +5,6 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 //Entity : 테이블 정보 설정
@@ -15,7 +14,7 @@ import java.time.LocalDateTime;
 @Data
 @Entity
 @Table(name = "tb_usr_inf")
-public class UsrInf {
+public class User {
 
     @Id // pk 설정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment
