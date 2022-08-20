@@ -1,6 +1,6 @@
 package com.jobcho.hywuto.controller;
 
-import com.jobcho.hywuto.model.UsrInf;
+import com.jobcho.hywuto.model.User;
 import com.jobcho.hywuto.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +13,7 @@ public class DummyControllerTest {
     private UserRepository userRepository;
 
     @PostMapping("/test")
-    public String join(UsrInf user) {
+    public String join(User user) {
 
         userRepository.save(user);
         return "회원가입이 완료되었습니다.";
