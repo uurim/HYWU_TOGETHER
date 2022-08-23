@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>hywuto - list</title>
+    <style>
+        .board{
+            width: 500px;
+            height: 700px;
+            margin : auto;
+        }
+
+        label{
+            display: inline-block;
+            width:60px;
+        }
+
+        input {
+            display: inline-block;
+            width: 400px;
+            margin-bottom: 10px;
+        }
+
+        textarea{
+            width:470px;
+            height: 400px;
+        }
+
+        #update {
+            text-align: center;
+            display: inline-block;
+            border: 1px solid;
+            width: 80px;
+            height: 30px;
+            background-color: moccasin;
+            text-decoration: none;
+            line-height: 30px;
+        }
+
+        #delete {
+            text-align: center;
+            display: inline-block;
+            border: 1px solid;
+            width: 80px;
+            height: 30px;
+            background-color: ligntpink;
+            text-decoration: none;
+            line-height: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div class = "board">
+    <label for="usrNm">작성자 : </label>
+    <input type="text" name="usrNm" id="usrNm" th:value="${boardTest.usrNm}" disabled>
+    <label for="pstNm">제목 : </label>
+    <input type="text" name="pstNm" id="pstNm" th:value="${boardTest.pstNm}" disabled>
+    <label for="pstCon">내용 : </label>
+    <textarea name="pstCon" id="pstCon" th:text="${boardTest.pstCon}" disabled></textarea>
+    <a th:href = "@{/board/update/{id}(id=${boardTest.id})}" id="update">수정</a>
+    <a th:href = "@{/board/delete/{id}(id=${boardTest.id})}" id="delete">삭제</a>
+
+</body>
+
+</html>

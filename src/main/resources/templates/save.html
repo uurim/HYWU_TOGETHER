@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>hywuto - list</title>
+  <style>
+    .board{
+      width: 500px;
+      height: 700px;
+      margin : auto;
+    }
+
+    label{
+      display: inline-block;
+      width:60px;
+    }
+
+    input {
+      display: inline-block;
+      width: 400px;
+      margin-bottom: 10px;
+    }
+
+    textarea{
+      width:470px;
+      height: 400px;
+    }
+
+    button{
+      margin-top:10px;
+      width:70px;
+      background-color: cyan;
+      border:1px solid;
+    }
+
+  </style>
+
+</head>
+
+<body>
+        <div class = "board">
+
+          <form method = "post">
+            <label for="usrNm">작성자 : </label>
+            <input type="text" name="usrNm" id="usrNm">
+            <label for="pstNm">제목 : </label>
+            <input type="text" name="pstNm" id="pstNm">
+            <label for="pstCon">내용 : </label>
+            <textarea name="pstCon" id="pstCon"></textarea>
+            <button type="submit">등록</button>
+          </form>
+
+        </div>
+</body>
+
+</html>
